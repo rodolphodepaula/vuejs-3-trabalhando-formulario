@@ -1,13 +1,13 @@
 members = [
     {
-        fname: 'John',
-        lname: 'Lennon',
-        instrument: 'Violão'
+        fname: 'José',
+        lname: 'da Silva',
+        technology: 'Laravel'
     },
     {
         fname: 'George',
         lname: 'Harrison',
-        instrument: 'Guitarra'
+        technology: 'Java'
     }
 ]
 
@@ -16,16 +16,14 @@ const handlingForms = {
     data() {
         return {
             members: window.members,
-            newMember: {},
+            newMember: {}
         }
     },
     methods: {
-        addMember () {
-            if (this.newMember.fname && this.newMember.lname && this.newMember.instrument) {
-                this.members.push(this.newMember)
+        addNewMember() {
+            if (this.newMember.fname && this.newMember.lname && this.newMember.technology) {
+                this.members.push(this.newMember);
                 this.newMember = {}
-            } else {
-                alert('Por favor preencha todos os campos')
             }
         }
     }

@@ -20,7 +20,7 @@ main td, main th {
 }
 
 main th {
-    border-bottom: 1px solid lightgrey;
+    border-bottom: 1px solid rgb(172, 245, 150);
 }
 
 main p {
@@ -39,7 +39,7 @@ main form label {
 }
 
 section.add-more {
-    background-color: rgb(241, 241, 241);
+    background-color: rgb(172, 245, 150);
     padding: 40px;
     margin-top: 40px;
 }
